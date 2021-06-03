@@ -1,1 +1,1 @@
-READme file 
+Inspiration for this project comes from Ken Jee's video on data scientist salaries. While this project is similar, this work uses a different data set and a substantially different algorithmic and model framework. Here is the link to his YouTube Video: https://www.youtube.com/watch?v=MpF9HENQjDo. 

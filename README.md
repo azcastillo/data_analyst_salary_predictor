@@ -2,12 +2,15 @@
 
  ### Project Overview:
  
-Write a summary of the project here.  
+Write a summary of the project here.
 
 
 ## Code and Resources Used 
 **Python Version:** 3.9  
-**Packages:** pandas, numpy, sklearn, matplotlib, seaborn,    
+**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, xgboost
+
+_Inspiration for this project comes from Ken Jee's video on data scientist salaries. Here is the link to his YouTube Video: https://www.youtube.com/watch?v=MpF9HENQjDo. While my project is similar, this work uses a different data set on a different position and a substantially different algorithmic, EDA, and model framework._
+
 
 ## Data Cleaning
 There was only a small amount of data cleaning necessary for this project. In particular, for part 1, there was missing data in the reject_code column of the dim_claims_df data frame. I chose to replace the missing data with 0 using the fillna method from pandas. I chose to use zero because no reject_code meant that your pharmacy claim got approved. 
@@ -15,19 +18,22 @@ There was only a small amount of data cleaning necessary for this project. In pa
 
 ## EDA
 
-* Count plot showing the how many times a insurance provider approved or denied the pharmacy claim. The count plot also shows how many times (total) each drug was approved or denied a pharmacy claim. 
 
-![](Avg_salary_sector_phd.jpg)
-
-* Count plot visualization detailing each drug and the associated times that a reject code appeared with said drug. 
-
-![](analyst_job_by_state.jpg)
-
-* Count plot detailing the formulary for each insurance provider and the number of times each drug was approved or not. 
+* Box plot detailing which sector paid a higher average salary. A detailed pivot table was also given in the salary_eda.ipynb file for more explicit numbers.  
 
 ![](avg_salary_sector.jpg )
 
+* The following graph shows the average salaries of data analyst jobs whose job descriptions indicated a PhD as a preference. Not many jobs indicating this but when they do the salaries can be significantly higher. 
 
+![](Avg_salary_sector_phd.jpg)
+
+* Bar chart indicating the number of available jobs in reference to the company's headquarters. As we can see, New York lead the way in terms of the number of such jobs being offered.  
+
+![](analyst_job_by_state.jpg)
+
+* The following is a box plot indicating the average salaries for data analyst positions whose job descriptions indicate SQL as a desired skill. It is clear that not only do positions want SQL, but it also pays a higher salary to know the language. 
+
+![](analyst_job_by_state.jpg)
 
 ## Model Building 
 
@@ -39,26 +45,30 @@ I used a random forest classifier for the moodel and evaluated the model using t
 A GridSearchCV was performed on the random forest model where I analyzed the max_depth hyperparameter. The GridSearchCV returned that the random forest classifier with a max_depth hyperparameter equal to 5 performed more optimally on the precision metric. I consequentely used this model for the prediction. 
 
 ## Models Used: 
-*	**DecisionTreeClassifier** – Baseline for the model
-*	**KNN** – To see how data performed on another non ensemble model. 
-*	**Random Forest Classifier** – With the sparsity and binary nature of the data, I thought this would be a good choice. 
+*	**Lasso Regression** – Baseline for the model
+*	**Ridge Regression** – To see how data performed on another non ensemble model. 
+*	**Elastic Net Regression** – To see how data performed on another non ensemble model. 
+*	**XGBoost** – With the sparsity and binary nature of the data, I thought this would be a good choice. 
 
-I ultimately opted with the RandomForestClassifier due to metric performance as well as wanting to avoid overtraining the decision tree classifier. As in part 1, a GridSearchCV was performed on the random forest model where I analyzed the max_depth parameter and n_estimators. The GridSearchCV provided a slightly better model with max_depth=5. I then used this model to make predictions. 
+I ultimately opted with the XGBoost due to MAE performance as well as wanting to avoid overtraining. Hyperparameter tuning using the XGBoost built in feature also allowed me to get the best MAE on the validation data from all models. 
 
 ## Model performance
 
 **Part 1**: 
-The Random Forest Classifier far outperformed the other approaches when using baseline metrics as well as with cross validation. 
+Using cross validation, we got the following explicit scores. Since hyperparameter tuning was used (using GridSearchCV and XGBoost built in tuning) for all of our models, we also give the found parameters. 
 
-RandomForestClassifier Scores: 
-*	accuracy = .935
-*	precision = .900
-*	recall =1
-*	AUC=.922
+Lasso Regression Score: 
+*	MAE: 15.23
+- Hyperparameters: alpha=0.01
 
-Cross Validation Scores for the RandomForestClassifier model: 
-*	mean accuracy = .94
-*	mean precision = .900
-*	mean recall =1
+Ridge Regression Score: 
+*	MAE: 15.40
+- Hyperparameters: 0.11 
 
-_Inspiration for this project comes from Ken Jee's video on data scientist salaries. Here is the link to his YouTube Video: https://www.youtube.com/watch?v=MpF9HENQjDo. While my project is similar, this work uses a different data set on a different position and a substantially different algorithmic, EDA, and model framework._
+Elastic Net Regression Score: 
+*	MAE: 17.67
+- Hyperparameters: alpha=0.01 and l1_ratio=0.01
+
+XGBoost Score: 
+*	MAE: 14.83
+- Hyperparameters: max_depth=7, min_child_weight=7, eta= 0.1, subsample=1

@@ -1,5 +1,9 @@
 # Data Analyst Salary Predictor Project
 
+<p align="center">
+  <img src=data_analyst.jpg />
+</p>
+
 ![](data_analyst.jpg)
 
  ### Project Overview:

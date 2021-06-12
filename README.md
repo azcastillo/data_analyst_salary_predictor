@@ -46,7 +46,7 @@ Discuss how we needed to clean the salaries, generate features from job descript
 
 * The following is a box plot indicating the average salaries for data analyst positions whose job descriptions indicate SQL as a desired skill. It is clear that not only do positions want SQL, but it also pays a higher salary to know the language. 
 
-![](analyst_job_by_state.jpg)
+![](sql_avg_salaries.jpg)
 
 ## Model Building: 
 Selected features from the feature selection notebook for the Lasso model and evaluated more features for the remaining models. I chose the features based off of the EDA done in the corresponding notebook. For the regularization models, I scaled the data with the built in normaize method for each model. After all features were selected I transformed the categorical variables into dummy variables using the pd.get_summies method. I split the data into train and tests sets with a test size of 30%. For the XGBoost model I first put the data set in the necessary form using Dmatrix and constructed a baseline model using default parameters before tuning. 

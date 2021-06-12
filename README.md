@@ -17,15 +17,15 @@ There was only a small amount of data cleaning necessary for this project. In pa
 
 * Count plot showing the how many times a insurance provider approved or denied the pharmacy claim. The count plot also shows how many times (total) each drug was approved or denied a pharmacy claim. 
 
-![](bin_drug_reject_code.jpg)
+![](Avg_salary_sector_phd.jpg)
 
 * Count plot visualization detailing each drug and the associated times that a reject code appeared with said drug. 
 
-![](reject_code_with_drug.jpg)
+![](analyst_job_by_state.jpg)
 
 * Count plot detailing the formulary for each insurance provider and the number of times each drug was approved or not. 
 
-![](formulary_for_payer.jpg)
+![](avg_salary_sector.jpg )
 
 
 

@@ -16,7 +16,7 @@ Extensive exploratory data analysis was used for the findings and can be referen
 - California, Colorado, Illinois were among the highest paying states for data analyst positions. 
 - Positions which included the title of 'Data Security Analyst' had the highest salaries. 
 
-Modelling the salaries consisted of regularization methods Lasso, Ridge, Elastic Net as well as the powerful XGBoost. I used GridSearchCV to optimize the regularization models and the built in hyperparameter tuning feature of XGBoost. 
+Modelling the salaries consisted of the regularization methods Lasso, Ridge, Elastic Net as well as the powerful XGBoost model. I used GridSearchCV on the regularization models and the built in hyperparameter tuning feature of XGBoost to optimize the models. 
 
 ## Code and Resources Used 
 **Python Version:** 3.9  
@@ -58,10 +58,10 @@ I used a random forest classifier for the moodel and evaluated the model using t
 A GridSearchCV was performed on the random forest model where I analyzed the max_depth hyperparameter. The GridSearchCV returned that the random forest classifier with a max_depth hyperparameter equal to 5 performed more optimally on the precision metric. I consequentely used this model for the prediction. 
 
 ## Models Used: 
-*	**Lasso Regression** – Baseline for the model
-*	**Ridge Regression** – To see how data performed on another non ensemble model. 
-*	**Elastic Net Regression** – To see how data performed on another non ensemble model. 
-*	**XGBoost** – With the sparsity and binary nature of the data, I thought this would be a good choice. 
+*	**Lasso Regression** – A baseline for the model. Given the sparsity of the data after one hot encoding, we could use feature selection to help with the predictions. 
+*	**Ridge Regression** – Given the present (slight) multicollinearity of the features, ridge regression could provide as a nice alternative to Lasso. 
+*	**Elastic Net Regression** –  See if we could potentially balance the l1 and l2 regularization techniques. 
+*	**XGBoost** – With the sparsity and binary nature of the data, a tree based boosted model seemed to have a solid chance to lower the MAE as much as possible. 
 
 I ultimately opted with the XGBoost due to MAE performance as well as wanting to avoid overtraining. Hyperparameter tuning using the XGBoost built in feature also allowed me to get the best MAE on the validation data from all models. 
 

@@ -26,7 +26,7 @@ _Inspiration for this project comes from Ken Jee's video on data scientist salar
 
 
 ## Data Cleaning
-There was only a small amount of data cleaning necessary for this project. In particular, for part 1, there was missing data in the reject_code column of the dim_claims_df data frame. I chose to replace the missing data with 0 using the fillna method from pandas. I chose to use zero because no reject_code meant that your pharmacy claim got approved. 
+Discuss how we needed to clean the salaries, generate features from job description, find the average size of each company, company age,  
 
 
 ## EDA
@@ -48,14 +48,9 @@ There was only a small amount of data cleaning necessary for this project. In pa
 
 ![](analyst_job_by_state.jpg)
 
-## Model Building 
+## Model Building: 
+Selected features from the feature selection notebook for the Lasso model and evaluated more features for the remaining models. I chose the features based off of the EDA done in the corresponding notebook. For the regularization models, I scaled the data with the built in normaize method for each model. After all features were selected I transformed the categorical variables into dummy variables using the pd.get_summies method. I split the data into train and tests sets with a test size of 30%. For the XGBoost model I first put the data set in the necessary form using Dmatrix and constructed a baseline model using default parameters before tuning. 
 
-**Part 1**: 
-First, I transformed the categorical variables into dummy variables using a one hot encoder. I also split the data into train and tests sets with a test size of 30%.   
-
-I used a random forest classifier for the moodel and evaluated the model using the accuracy, precision, recall, and AUC metrics. I chose a random forest classifier because of the sparsity associated with the data as well as the primary binary nature of each feature. 
-
-A GridSearchCV was performed on the random forest model where I analyzed the max_depth hyperparameter. The GridSearchCV returned that the random forest classifier with a max_depth hyperparameter equal to 5 performed more optimally on the precision metric. I consequentely used this model for the prediction. 
 
 ## Models Used: 
 *	**Lasso Regression** – A baseline for the model. Given the sparsity of the data after one hot encoding, we could use feature selection to help with the predictions. 
@@ -68,7 +63,7 @@ I ultimately opted with the XGBoost due to MAE performance as well as wanting to
 ## Model performance
 
 **Part 1**: 
-Using cross validation, we got the following explicit scores. Since hyperparameter tuning was used (using GridSearchCV and XGBoost built in tuning) for all of our models, we also give the found parameters. 
+Using cross validation, we got the following explicit MAE scores. Since hyperparameter tuning was used (using GridSearchCV and XGBoost built in tuning) for all of our models, we also give the found parameters. 
 
 Lasso Regression Score: 
 *	MAE: 15.23

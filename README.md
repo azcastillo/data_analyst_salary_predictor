@@ -44,7 +44,7 @@ Discuss how we needed to clean the salaries, generate features from job descript
 
 ![](analyst_job_by_state.jpg)
 
-* The following is a box plot indicating the average salaries for data analyst positions whose job descriptions indicate SQL as a desired skill. It is clear that not only do positions want SQL, but it also pays a higher salary to know the language. 
+* This box plot shows the average salaries for data analyst positions whose job descriptions indicate SQL as a desired skill. It is clear that not only do companies desire SQL as a necessary skill, but it also pays a higher salary to know the language. 
 
 ![](sql_avg_salaries.jpg)
 

@@ -4,8 +4,6 @@
   <img src=data_analyst.jpg />
 </p>
 
-![](data_analyst.jpg)
-
  ### Project Overview:
  
 This project consisted of analyzing the skills needed for data analyst positions as well as predict the salaries for such positions (MAE approx 14.83K). I also analyzed the locations that had the most jobs available, their available salaries, which type of specific data analyst jobs were available, as well as which specific job titles had the highest ratings. I used data that was scraped from glassdoor.com and can be found at the following link: https://www.kaggle.com/andrewmvd/data-analyst-jobs. 

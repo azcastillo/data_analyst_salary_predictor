@@ -30,7 +30,7 @@ Extensive exploratory data analysis was used for the findings and can be referen
 - California, Colorado, Illinois were among the highest paying states for data analyst positions. 
 - Data Security Analyst had the highest salaries (~81K) but one of the lower average rating at around 2.79. 
 
-Modelling the salaries consisted of the regularization methods Lasso, Ridge, Elastic Net as well as the powerful XGBoost model. I used GridSearchCV on the regularization models and the built in hyperparameter tuning feature of XGBoost to optimize the models. 
+Modelling the salaries consisted of the regularization methods Lasso, Ridge, Elastic Net as well as the powerful XGBoost. I used GridSearchCV on the regularization models and the built in hyperparameter tuning feature of XGBoost to optimize that model. 
 
 ## Code and Resources Used 
 **Python Version:** 3.9  

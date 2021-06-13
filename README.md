@@ -1,12 +1,12 @@
 # Data Analyst Salary Predictor Project
 
 <p float="center">
-  <img src=data_analyst.jpg />
-  <img src=python_sql.png />
+  <img src=images/data_analyst.jpg />
+  <img src=images/python_sql.png />
 </p>
 
 <p float="center">
-  <img src=tableau.png />
+  <img src=images/tableau.png />
 </p>
 
  ### Project Overview:
@@ -54,15 +54,15 @@ The following images are highlights of the exploratory data analysis performed o
 
 * Box plot detailing which sector paid a higher average salary. A detailed pivot table was also given in the salary_eda.ipynb file for more explicit numbers.  
 
-![](avg_salary_sector.jpg )
+![](images/avg_salary_sector.jpg )
 
 * The following graph shows the average salaries of data analyst jobs whose job descriptions indicated a PhD as a preference. Not many jobs indicated this but when they do the salaries can be significantly higher. 
 
-![](Avg_salary_sector_phd.jpg)
+![](images/Avg_salary_sector_phd.jpg)
 
 * Bar chart indicating the number of available jobs in reference to the company's headquarters. As we can see, New York lead the way in terms of the number of such jobs being offered.  
 
-![](analyst_job_by_state.jpg)
+![](images/analyst_job_by_state.jpg)
 
 * This box plot shows the average salaries for data analyst positions whose job descriptions indicate SQL as a desired skill. It is clear that not only do companies desire SQL as a necessary skill, but it also pays a higher salary to know the language. 
 

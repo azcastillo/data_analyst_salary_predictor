@@ -1,6 +1,6 @@
 # Data Analyst Salary Predictor Project
 
-<p float="left">
+<p float="center">
   <img src=data_analyst.jpg />
   <img src=python_sql.png />
   <img src=tableau.png />
@@ -33,7 +33,15 @@ Modelling the salaries consisted of the regularization methods Lasso, Ridge, Ela
 **Python Version:** 3.9  
 **Packages:** pandas, numpy, sklearn, matplotlib, seaborn, xgboost
 
-* _Inspiration for this project comes from Ken Jee's video on data scientist salaries. Here is the link to his YouTube Video: https://www.youtube.com/watch?v=MpF9HENQjDo. While my project is similar, this work uses a different data set on a different position and a substantially different algorithmic, EDA, and model framework._
+**Books Used**: 
+- Grus, Joel. Data science from scratch: first principles with python. O'Reilly Media, 2019.
+- Bruce, Peter, Andrew Bruce, and Peter Gedeck. Practical Statistics for Data Scientists: 50+ Essential Concepts Using R and Python. O'Reilly Media, 2020.
+- McKinney, Wes. Python for data analysis: Data wrangling with Pandas, NumPy, and IPython. " O'Reilly Media, Inc.", 2012.
+
+**URLs Used**: 
+- https://blog.cambridgespark.com/hyperparameter-tuning-in-xgboost-4ff9100a3b2f
+- https://towardsdatascience.com/feature-selection-and-eda-in-python-c6c4eb1058a3
+- _Inspiration for this project comes from Ken Jee's video on data scientist salaries. Here is the link to his YouTube Video: https://www.youtube.com/watch?v=MpF9HENQjDo. While my project is similar, this work uses a different data set on a different position and a substantially different algorithmic, EDA, and model framework._
 
 
 ## Data Cleaning: 

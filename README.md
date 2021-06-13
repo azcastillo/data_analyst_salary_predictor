@@ -7,6 +7,7 @@
 
 <p float="center">
   <img src=images/tableau.png />
+  <img src=images/excel.png/>
 </p>
 
  ### Project Overview:

@@ -19,7 +19,7 @@ As data analyst positions become more popular as the field grows, I hope the res
 Part of the project consisted of generating features from the text of the job description to find the which skills were required. Examples include, SQL, Excel, Tableau, Power-BI, and Python. 
 
 Extensive exploratory data analysis was used for the findings and can be referenced below. A few important items that stand out from the data are as follows:
-- Average salary for all positions is about 72.12 and average rating for all companies is about 3.16
+- Average salary for all positions is about 72.12K and average rating for all companies is about 3.16
 - 28% of companies wanted Python skills and about 60% wanted sql or excel. 
 - 100% of positions wanted at least a bachelor's degree, 36% mentioned a masters in the title, 2% only wanted a PhD. 
 - Companies whose revenues were between 1 and 5 million paid the highest average salary at about 76 million. In contrast, the companies with revenues of 500 million to 1 billion were near the bottom. 

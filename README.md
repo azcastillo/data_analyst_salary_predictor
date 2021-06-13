@@ -1,11 +1,11 @@
 # Data Analyst Salary Predictor Project
 
-<p float="center">
+<p align="center">
   <img src=images/data_analyst.jpg />
   <img src=images/python_sql.png />
 </p>
 
-<p float="center">
+<p align="center">
   <img src=images/tableau.png />
   <img src=images/excel.png/>
 </p>

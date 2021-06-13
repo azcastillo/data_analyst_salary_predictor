@@ -26,10 +26,11 @@ Modelling the salaries consisted of the regularization methods Lasso, Ridge, Ela
 **Python Version:** 3.9  
 **Packages:** pandas, numpy, sklearn, matplotlib, seaborn, xgboost
 
-_Inspiration for this project comes from Ken Jee's video on data scientist salaries. Here is the link to his YouTube Video: https://www.youtube.com/watch?v=MpF9HENQjDo. While my project is similar, this work uses a different data set on a different position and a substantially different algorithmic, EDA, and model framework._
+* _Inspiration for this project comes from Ken Jee's video on data scientist salaries. Here is the link to his YouTube Video: https://www.youtube.com/watch?v=MpF9HENQjDo. While my project is similar, this work uses a different data set on a different position and a substantially different algorithmic, EDA, and model framework._
 
 
-## Data Cleaning
+## Data Cleaning: 
+There 
 Discuss how we needed to clean the salaries, generate features from job description, find the average size of each company, company age,  
 
 
@@ -75,7 +76,7 @@ Lasso Regression Score:
 
 Ridge Regression Score: 
 *	MAE: 15.40
-- Hyperparameters: 0.11 
+- Hyperparameters: alpha=0.11 
 
 Elastic Net Regression Score: 
 *	MAE: 17.67

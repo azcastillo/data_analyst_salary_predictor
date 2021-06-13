@@ -1,8 +1,11 @@
 # Data Analyst Salary Predictor Project
 
-<p align="center">
+<p float="left">
   <img src=data_analyst.jpg />
+  <img src=python_sql.png />
+  <img src=tableau.png />
 </p>
+
 
  ### Project Overview:
  
@@ -30,18 +33,16 @@ Modelling the salaries consisted of the regularization methods Lasso, Ridge, Ela
 
 
 ## Data Cleaning: 
-There 
-Discuss how we needed to clean the salaries, generate features from job description, find the average size of each company, company age,  
-
+There was a significant amount of cleaning that needed to be done for this project. We first needed to extract the target feature avg_salary. This was done using multiple split and lambda functions. I engineered features by extracting specific job position titles (e.g. data analyst, business analyst, data management, data scientist, data warehouse engineer, data engineer, data security analyst, and risk analyst) as well as specific seniority (e.g. junior, senior, and N/A). More feature engineering was needed by extracting traits of each company like age, company size, and the location (state only). An important feature extraction consisted of acquiring the skills needed for data analyst positions. I did this by considering the job description of the position and extracting some potential traits. Some traits that were extracted were SQL, Tableau, Python, Power BI, Excel, Deep Learning, PhD, and Masters degree. Many of these features were imperative not only for the EDA portion of the project but also for the modeling portion.  
 
 ## EDA
-
+The following images are highlights of the exploratory data analysis performed on this data set. There is much more detailed analysis given in the salary_eda.ipynb notebook. 
 
 * Box plot detailing which sector paid a higher average salary. A detailed pivot table was also given in the salary_eda.ipynb file for more explicit numbers.  
 
 ![](avg_salary_sector.jpg )
 
-* The following graph shows the average salaries of data analyst jobs whose job descriptions indicated a PhD as a preference. Not many jobs indicating this but when they do the salaries can be significantly higher. 
+* The following graph shows the average salaries of data analyst jobs whose job descriptions indicated a PhD as a preference. Not many jobs indicated this but when they do the salaries can be significantly higher. 
 
 ![](Avg_salary_sector_phd.jpg)
 

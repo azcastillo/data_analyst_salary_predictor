@@ -1,11 +1,13 @@
 # Data Analyst Salary Predictor Project
 
-<p float="left">
+<p float="center">
   <img src=data_analyst.jpg />
   <img src=python_sql.png />
-  <img src=tableau.png />
 </p>
 
+<p float="center">
+  <img src=tableau.png />
+</p>
 
  ### Project Overview:
  
@@ -64,7 +66,7 @@ The following images are highlights of the exploratory data analysis performed o
 
 * This box plot shows the average salaries for data analyst positions whose job descriptions indicate SQL as a desired skill. It is clear that not only do companies desire SQL as a necessary skill, but it also pays a higher salary to know the language. 
 
-![](sql_avg_salaries.jpg)
+![](images/sql_avg_salaries.jpg)
 
 ## Model Building: 
 Selected features from the feature selection notebook for the Lasso model and evaluated more features for the remaining models. I chose the features based off of the EDA done in the corresponding notebook. For the regularization models, I scaled the data with the built in normaize method for each model. After all features were selected I transformed the categorical variables into dummy variables using the pd.get_summies method. I split the data into train and tests sets with a test size of 30%. For the XGBoost model I first put the data set in the necessary form using Dmatrix and constructed a baseline model using default parameters before tuning. 

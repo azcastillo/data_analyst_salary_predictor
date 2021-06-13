@@ -16,7 +16,7 @@ This project consisted of analyzing the skills needed for data analyst positions
 
 As data analyst positions become more popular as the field grows, I hope the results of this project help those who are looking for such positions. Those on the job market could use the results of this project to zone in on what skills they should acquire, where they could potentitally look for jobs, as well as analyze which sectors value the position the most.  
 
-Part of the project consisted of generating features from the text of the job description to find the which skills were required for such position. Examples include, SQL, Excel, Tableau, Power-BI, and Python. 
+Part of the project consisted of generating features from the text of the job description to find the which skills were required. Examples include, SQL, Excel, Tableau, Power-BI, and Python. 
 
 Extensive exploratory data analysis was used for the findings and can be referenced below. A few important items that stand out from the data are as follows:
 - Average salary for all positions is about 72.12 and average rating for all companies is about 3.16

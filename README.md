@@ -86,8 +86,7 @@ I selected features from the feature selection notebook for the Lasso model and 
 I ultimately opted with the XGBoost due to MAE performance as well as wanting to avoid overtraining. Hyperparameter tuning using the XGBoost built in feature also allowed me to get the best MAE on the validation data from all models. 
 
 ## Model performance
-
-**Part 1**: 
+ 
 Using cross validation, we got the following explicit MAE scores. Since hyperparameter tuning was used (using GridSearchCV and XGBoost built in tuning) for all of our models, we also give the found parameters. 
 
 Lasso Regression Score: 
